@@ -58,7 +58,6 @@ if __name__ == '__main__':
             highest_digram_count = i_highest_digram_count
             best_matches = [i_best_match,]
             best_keys = [i_key,]
-            
 
     for i in xrange(len(best_matches)):
         args = (best_matches[i], highest_digram_count, best_keys[i])

@@ -35,5 +35,6 @@ def bruteforce_key():
 
     print('%r (%s digrams)' % (best_match, highest_digram_count))
 
+
 if __name__ == '__main__':
     bruteforce_key()
