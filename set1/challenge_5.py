@@ -14,7 +14,7 @@ expected_output = '0b3637272a2b2e63622c2e69692a23693a2a3c6324202d623d63343c2a262
 
 
 def repeating_key_xor(message, key):
-    xor = ''.join(chr(ord(c)^ord(k)) for c,k in izip(message, cycle(key)))
+    xor = ''.join(chr(ord(c) ^ ord(k)) for c, k in izip(message, cycle(key)))
     return binascii.hexlify(xor)
 
 output = repeating_key_xor(_input, key)
